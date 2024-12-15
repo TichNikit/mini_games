@@ -1,0 +1,15 @@
+{% extends "basic_template.html" %}
+
+
+{% block info %}
+    <form method="post" action="/guess_number">
+        <h2>Я загадал число от 1 до 100, попробуй его отгадать</h2>
+        <label for="number_user">Ваше число</label>
+        <input type="number" id="number_user" name="number_user" maxlength="30" required>
+        <button type="submit">Отправить</button>
+        <h2>{{ error }}</h2>
+        <button><a href="/">Вернуться на главную страницу</a></button>
+    </form>
+{% endblock %}
+
+

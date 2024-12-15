@@ -1,0 +1,9 @@
+{% extends "basic_template.html" %}
+
+
+{% block info %}
+    <h2>Ваше предсказание:</h2>
+    <h2>{{ answer }}</h2>
+    <button><a href="/prediction">Попробуйте ещё раз</a></button>
+    <button><a href="/">Вернуться на главную страницу</a></button>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "basic_template.html" %}
+
+
+{% block info %}
+    <form method="post" action="/body_weight">
+        <h2>Введите свой вес в киллограммах и рост в метрах</h2>
+        <label for="weight">Ваш вес</label>
+        <input type="number" id="weight" name="weight" maxlength="30" required>
+        <label for="height">ваш рост</label>
+        <input type="float" id="height" name="height" maxlength="30" required>
+        <button type="submit">Отправить</button>
+        <h2>Ваш индекс массы тела: {{ body_index }}</h2>
+        <h2>{{ error }}</h2>
+        <button><a href="/">Вернуться на главную страницу</a></button>
+    </form>
+{% endblock %}
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 50px;
+            text-align: center;
+            color: #333;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ced4da;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 250px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Добро пожаловать</h1>
+    <nav>
+        <div class="card"><a href="/prediction">Шарик с предсказаниями</a></div>
+        <div class="card"><a href="/heads_and_tails">Орёл-решка</a></div>
+        <div class="card"><a href="/cube">Игровой кубик</a></div>
+        <div class="card"><a href="/cube_for_party">Кубик для вечеринки</a></div>
+        <div class="card"><a href="/body_weight">Индекс массы тела</a></div>
+        <div class="card"><a href="/guess_number">Угадай число</a></div>
+        <div class="card"><a href="/hangman">Игра "Висельник"</a></div>
+        <div class="card"><a href="/magic_ball">Магический шарик</a></div>
+    </nav>
+</body>
+</html>
